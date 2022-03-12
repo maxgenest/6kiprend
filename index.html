@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title>Websocket Practice</title>
+</head>
+<body>
+  <input id="name"/>
+  <textarea id="message" ></textarea>
+  <button>Send</button>
+  <div id='messages'></div>
+
+  <script>
+    const ws = new WebSocket('ws://localhost:3030');
+    ws.onopen = () => { 
+      console.log('Now connected'); 
+    };
+  </script>
+</body>
+</html>
