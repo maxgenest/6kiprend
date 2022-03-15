@@ -1,0 +1,26 @@
+{
+  "name": "6kiprend",
+  "version": "1.0.0",
+  "description": "Online adaptation of the board game \"6 qui prend\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxgenest/6kiprend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maxgenest/6kiprend/issues"
+  },
+  "homepage": "https://github.com/maxgenest/6kiprend#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15",
+    "ws": "^8.5.0"
+  }
+}
