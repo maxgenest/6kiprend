@@ -3,13 +3,17 @@ const path = require("path");
 const app = express();
 
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "index.html"));
+  res.sendFile(path.join(__dirname, "svelte", "public", "index.html"));
 });
 
 const port = 8765;
 
-app.listen(port, () => {
-  console.log(`listening http://localhost:${port}`);
+app.listen(port, (error) => {
+  if (error) {
+    console.error("server cannot listen");
+    return;
+  }
+  console.log(`server listening http://localhost:${port}`);
 });
 
 // websocket code
